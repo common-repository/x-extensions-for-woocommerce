@@ -1,0 +1,1 @@
+jQuery(document).ready(function(n){n(".xewc-color-field").wpColorPicker(),n(document).on("change",".xewc_extensions_list_item",function(e){var a=n(this),c=a.prop("checked")?1:0,a=a.attr("name");n.ajax({url:ajaxurl,type:"POST",data:{isEnable:c,addonFieldName:a,action:"xewc_addon_enable_disable"},success:function(e){e.success}})})});
